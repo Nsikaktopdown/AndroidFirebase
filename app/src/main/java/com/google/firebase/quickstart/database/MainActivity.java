@@ -92,7 +92,7 @@ public class  MainActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int i = item.getItemId();
         if (i == R.id.action_logout) {
-            //TODO create logout
+            //TODO 3 create logout
 
             startActivity(new Intent(this, SignInActivity.class));
             finish();

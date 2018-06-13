@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -63,8 +64,10 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     }
 
     private void signIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Toast.makeText(this, "Not working", Toast.LENGTH_SHORT).show();
+        //TODO 0 create Google signin Intent
+        /*Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+        startActivityForResult(signInIntent, RC_SIGN_IN);*/
     }
 
 
@@ -81,14 +84,14 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
 
     //Authenticate User with Google Account
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
-        //TODO create login with Google
+        //TODO 1 create login with Google
     }
 
     // [START basic_write]
     private void writeNewUser(String userId, String name, String email, String avatar) {
         User user = new User(name, email, avatar);
 
-       //TODO save users to database
+       //TODO 2 save users to database
     }
     // [END basic_write]
 

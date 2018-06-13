@@ -90,8 +90,9 @@ public class NewPostActivity extends BaseActivity {
                                     "Error: could not fetch user.",
                                     Toast.LENGTH_SHORT).show();
                         } else {
+
                             // Write new post
-                            writeNewPost(userId, user.username, title, body, user.avatar);
+                            //TODO 4 write post to database
                         }
 
                         // Finish this Activity, back to the stream
