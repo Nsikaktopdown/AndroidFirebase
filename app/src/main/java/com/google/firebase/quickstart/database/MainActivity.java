@@ -26,7 +26,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.quickstart.database.fragment.MyPostsFragment;
 import com.google.firebase.quickstart.database.fragment.MyTopPostsFragment;
 import com.google.firebase.quickstart.database.fragment.RecentPostsFragment;
@@ -93,7 +92,8 @@ public class  MainActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int i = item.getItemId();
         if (i == R.id.action_logout) {
-            FirebaseAuth.getInstance().signOut();
+            //TODO create logout
+
             startActivity(new Intent(this, SignInActivity.class));
             finish();
             return true;
