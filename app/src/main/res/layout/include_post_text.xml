@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textStyle="bold"
+        android:textColor="@android:color/black"
         tools:text="My First Post" />
 
     <TextView
